@@ -4,6 +4,7 @@
 #Unnecessary folders
 .classpath
 .project
+.settings
 
 # Log file
 *.log
