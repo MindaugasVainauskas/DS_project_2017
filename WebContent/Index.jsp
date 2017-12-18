@@ -9,6 +9,21 @@
 		<input type="text" placeholder="Enter a word"/>
 		<button>Submit</button>
 	</form>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Word</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{ wordToFind }}</td>
+				<td>{{ explanation }}</td>
+			</tr>
+		</tbody>
+	</table>
 
 </body>
 </html>
