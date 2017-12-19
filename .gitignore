@@ -5,6 +5,7 @@
 .classpath
 .project
 .settings
+.build
 
 # Log file
 *.log
