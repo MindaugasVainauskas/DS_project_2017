@@ -8,7 +8,6 @@ public class Request {
 	
 	//constructor
 	public Request(String word, String wordDesc, int taskNum) {
-		super();
 		this.word = word;
 		this.wordDesc = wordDesc;
 		this.taskNum = taskNum;
