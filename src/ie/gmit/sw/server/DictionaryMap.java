@@ -14,14 +14,14 @@ public class DictionaryMap {
 	
 	public void csvRead() throws Exception{
 		//path to csv dictionary file
-		String csvFile = "./dictionary.csv";
+		String dictFile = "./dictionary.csv";
 		
 		String line = null;
 		String key = null;		
 		String charCheck = null;
 		
 		//declare and initialise the bufferedReader to parse dictionary file
-		BufferedReader br = new BufferedReader(new FileReader(csvFile));
+		BufferedReader br = new BufferedReader(new FileReader(dictFile));
 		
 		//start splitting line after second comma
 		while((line = br.readLine())!= null){	
@@ -57,18 +57,8 @@ public class DictionaryMap {
 		//if word exists already its definition is added
 		dictHashMap.get(key).add("\n"+definition);
 	}
-
 	
-//search for the word in dictionary map
-	public void search(String Word){		
-		if(dictHashMap.containsKey(Word.toUpperCase())){			
-			System.out.println("Word-> "+Word.toUpperCase()+"; Definition-> "+dictHashMap.get(Word.toUpperCase()).toString());			
-		}	
-		else{
-			System.out.println(Word.toUpperCase()+" --> This word is undefined!");
-		}
-	}//end of search
-	
+	//Return the hashmap when requested in another class
 	public HashMap<String, ArrayList<String>> getDictionary(){		
 		return this.dictHashMap;
 	}
