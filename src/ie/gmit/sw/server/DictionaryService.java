@@ -5,7 +5,7 @@ import java.rmi.server.RemoteObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class DictionaryService extends RemoteObject{
+public class DictionaryService extends RemoteObject implements Servitor{
 	
 	//Default serial version ID added.
 	private static final long serialVersionUID = 1L;
