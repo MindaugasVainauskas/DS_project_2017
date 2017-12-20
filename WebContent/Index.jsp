@@ -4,9 +4,9 @@
 </head>
 <body>
 	<h4>Enter word to look for in dictionary.</h4>
-	<form>
+	<form id="wordInputForm">
 		
-		<input type="text" placeholder="Enter a word"/>
+		<input type="text" value="word" placeholder="Enter a word"/>
 		<button>Submit</button>
 	</form>
 	
@@ -19,7 +19,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>{{ wordToFind }}</td>
+				<td>{{ word }}</td>
 				<td>{{ explanation }}</td>
 			</tr>
 		</tbody>

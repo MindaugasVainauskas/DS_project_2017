@@ -9,11 +9,11 @@ public class DictionaryServer {
 		DictionaryService ds = new DictionaryService();
 		
 		//Start up registry on port 1099(Default port)
-		//LocateRegistry.createRegistry(1099);
+		LocateRegistry.createRegistry(1099);
 		
 		
 		//bind dictionary service with a name.
-		//Naming.rebind("dictionaryService", ds);
+		Naming.rebind("dictionaryService", ds);
 		
 		System.out.println("Dictionary server ready!");
 		
