@@ -3,7 +3,7 @@
   	
 	<servlet>
     <servlet-name>service-handler</servlet-name>
-    <servlet-class>ie.gmit.sw.servlet.NewServlet</servlet-class>
+    <servlet-class>ie.gmit.sw.servlet.RequestServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>

@@ -13,7 +13,6 @@ public class DictionaryServer {
 		//bind dictionary service with a name.
 		Naming.rebind("dictionaryService", ds);
 		
-		System.out.println(ds.search("Anthem"));
 		//print out response to console that server is ready
 		System.out.println("Dictionary server ready!");		
 	}
