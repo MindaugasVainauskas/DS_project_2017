@@ -5,5 +5,5 @@ import java.rmi.RemoteException;
 
 //Client copy of Servitor interface
 public interface Servitor extends Remote{
-	public void search(String Word) throws RemoteException;
+	public String search(String Word) throws RemoteException;
 }

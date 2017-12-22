@@ -1,16 +1,19 @@
 package ie.gmit.sw.client;
 
-public class Request {
+import java.io.Serializable;
+
+public class Request implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String word;
 	private String wordDesc;
 	private int taskNum;
 	
 	//constructor
-	public Request(String word, String wordDesc, int taskNum) {
+	public Request(String word, String wordDesc) {
 		this.word = word;
 		this.wordDesc = wordDesc;
-		this.taskNum = taskNum;
+		this.taskNum++;
 	}
 
 	//Getters and setters section -------------------------
@@ -33,11 +36,4 @@ public class Request {
 	public int getTaskNum() {
 		return taskNum;
 	}
-
-	public void setTaskNum(int taskNum) {
-		this.taskNum = taskNum;
-	}
-	
-	
-
 }
